@@ -1,1 +1,1 @@
-# AestheticPasswordGenerator-
+# AestheticPasswordGenerator
