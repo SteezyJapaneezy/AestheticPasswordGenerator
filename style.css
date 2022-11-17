@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  padding: 10px;
+  margin: 0;
+}
+h2 {
+  color: lightcoral;
+  font-size: 20px;
+  font-weight: 100;
+  margin: 10px 0 20px;
+  text-align: center;
+}
+.container {
+  display: grid;
+  gap: 1rem;
+}
+.result-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 10px;
+  height: 50px;
+  width: 100%;
+}
+.result-container #result {
+  word-wrap: break-word;
+  max-width: calc(100% - 40px);
+}
+.result-container .btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+}
+.settings {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 20px;
+  padding-top: 5px;
+  width: 350px;
+  max-width: 100%;
+  display: grid;
+  gap: 1.4rem;
+}
+.btn {
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 10px 12px;
+}
+.slider {
+  -webkit-appearance: none;
+  background-color: lightcoral;
+  border-radius: 10px;
+  height: 10px;
+  width: 100%;
+  outline: none;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+
+.btn-large {
+  display: block;
+  font-size: 14px;
+  font-weight: 100;
+  background-color: lightcoral;
+  width: 100%;
+  padding: 14px 12px;
+}
+.btn-large:hover {
+  background-color: rgba(240, 128, 128, 0.8);
+}
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.setting #value {
+  color: lightcoral;
+  font-size: 60px;
+}
